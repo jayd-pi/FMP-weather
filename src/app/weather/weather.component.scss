@@ -1,0 +1,49 @@
+.container {
+  display: block;
+  height: 200px;
+  background-color: skyblue !important;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  // margin-left: auto;
+  // margin-right: auto;
+  .form {
+    input {
+      padding: 5px 100px 5px 5px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      border: 1px solid black;
+
+      ::placeholder {
+        color: red;
+      }
+    }
+
+    button {
+      margin-left: 100px;
+      border-radius: 6px;
+      padding: 6px;
+      background-color: white !important;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  .form-content {
+    display: inline-block;
+    margin-top: 50px;
+    background-color: rgba(93, 180, 220, 0.1);
+    padding: 20px 75px;
+    border-radius: 8px;
+    p{
+      color:black !important;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+}

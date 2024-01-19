@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Weather Application</h1>
+  <form class="form">
+    <input type="text" name="city" Placeholder= "Enter your city"
+    [(ngModel)]="city" /><br>
+    <button class="button" (click)="getWeather()">Submit</button>
+  </form>
+  <div class="form-content" *ngIf="weatherData">
+    <p> Name: {{weatherData.name}}</p>
+    <p>Temperature {{weatherData.main.temp}}</p>
+    <p>Humidity: {{weatherData.main.humidity}}</p>
+    <p>Description: {{weatherData.weather[0].description}}</p>
+  </div>
+</div>
